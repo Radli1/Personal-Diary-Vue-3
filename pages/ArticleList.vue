@@ -11,13 +11,13 @@
   </div>
 </template>
 <script>
-import PaginationComponent from '../src/components/PaginationComponent.vue';
-import SortComponent from '../src/components/SortComponent.vue';
+import AppPagination from '../components/PaginationComponent.vue';
+import AppSort from '../components/SortComponent.vue';
 
 export default {
   components: {
-    PaginationComponent,
-    SortComponent,
+    AppPagination,
+    AppSort,
   },
 };
 </script>
