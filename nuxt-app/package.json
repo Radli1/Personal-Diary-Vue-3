@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^3.0.0",
+    "@nuxtjs/proxy": "^2.1.0",
     "@pinia/nuxt": "^0.4.2"
   }
 }
