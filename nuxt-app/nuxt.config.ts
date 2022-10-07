@@ -3,6 +3,9 @@ import { defineNuxtConfig } from "nuxt/config"
 
 export default defineNuxtConfig({
     modules: [
-        '@pinia/nuxt'
-    ]
+        '@pinia/nuxt',
+   
+        // Simple usage
+        '@nuxtjs/axios'
+     ],
 })

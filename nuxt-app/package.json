@@ -16,6 +16,7 @@
     "prettier": "^2.7.1"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^3.0.0",
     "@pinia/nuxt": "^0.4.2"
   }
 }

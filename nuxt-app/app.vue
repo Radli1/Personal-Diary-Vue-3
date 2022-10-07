@@ -1,7 +1,6 @@
 <template>
   <div>
     <div>
-      <index.vue />
       <article-list />
       <diary-page />
       <new-article /> 
@@ -11,7 +10,6 @@
 <script>
 import DiaryPage from '@/DiaryPage.vue';
 import NewArticle from '@/NewArticle.vue';
-import ArticleList from '@/ArticleList.vue';
 import ArticleList from '@/ArticleList.vue';
 
 export default {
