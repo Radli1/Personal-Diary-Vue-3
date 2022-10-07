@@ -10,6 +10,7 @@ export const useTitlesApi =  defineStore ("useTitlesApi", {
       async getTitles () {
         try {
           const id = 0;
+          ///const result = await fetch ()
           const result = await axios({
             method: 'get',
             url: `https://jsonplaceholder.typicode.com/posts/`,
