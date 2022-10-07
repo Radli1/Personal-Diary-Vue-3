@@ -14,7 +14,7 @@ export default defineNuxtConfig(
     ,     
     publicRuntimeConfig: {
       axios: {
-        baseURL: 'http://localhost:3001/'
+        baseURL: 'baseUrl'///'http://localhost:3001/'
       },
     },
     proxy: {
