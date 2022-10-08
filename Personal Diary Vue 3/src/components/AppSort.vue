@@ -1,9 +1,10 @@
 <template>
   <button @click="orderType='asc'">Сортировка по возрастанию</button>
   <button @click="orderType='desc'">Сортировка по убыванию</button>
-
+  <button class="sort" @click="orderType">Сортировка по возрастанию</button>
 </template>
 <script>
+
 export default {
     setup() {
         if (orderType='asc') {
@@ -23,8 +24,3 @@ export default {
       }
     }
   </script>
-
-  <template>
-     <button class="sort" @click="orderType">Сортировка по возрастанию
-   </button>
-  </template>

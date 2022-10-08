@@ -1,18 +1,14 @@
 <template>
   <div>
     <div>
-      <PaginationComponent />
-      <SortComponent />
-      <!-- <div v-for="index in paginatedArray" :key="index">
-      <h2>{{paginatedArray.id}}</h2>
-      <p>{{paginatedArray.title}}</p>
-    </div> -->
+      <AppPagination />
+      <AppSort />
     </div>
   </div>
 </template>
 <script>
-import AppPagination from '../components/PaginationComponent.vue';
-import AppSort from '../components/SortComponent.vue';
+import AppPagination from '@/components/AppPagination.vue';
+import AppSort from '@/components/AppSort.vue';
 
 export default {
   components: {
@@ -22,11 +18,3 @@ export default {
 };
 </script>
 
-<!-- <script setup>
-  //import { ref, computed, reactive } from "@nuxtjs/composition-api";
-  import  PaginationComponent from './src/components';
-  import  SortComponent from '@/src/components'
-
-  const { paginatedArray } = storeToRefs(useTitleStore())
-  
-  defineProps(['paginatedArray']) -->

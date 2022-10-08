@@ -1,23 +1,29 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import ArticleList from '../views/ArticleList.vue'
+import DiaryPage from '../views/DiaryPage.vue'
+import { useTitlesApi } from '../stores/useTitlesApi'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: HomeView
+      name: 'ArticleList',
+      component: ArticleList
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue')
+      path: '/diarypage',
+      name: 'DiaryPage',
+      component: DiaryPage
     }
   ]
 })
+
+// router.beforeEach((from, to, next) => {
+//   console.log('to',to)
+//   console.log('from',from)
+//   if (!useTitlesApi.state.paginatedArray) alert ('Данные загружаются')
+//     else next()
+// })
 
 export default router
