@@ -13,7 +13,7 @@ export const useTitlesStore =  defineStore ("titles", {
         let totalPages = 0 
         const response = await axios({
           method: 'get',
-          url: `https://jsonplaceholder.typicode.com/posts`, ///`https://api.instantwebtools.net/v1/passenger?page=2&size=60/`,
+          url: `https://jsonplaceholder.typicode.com/posts`,
             params: {
               _start: (page - 1) * perPage,
               _end: page * perPage,
