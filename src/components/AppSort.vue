@@ -37,8 +37,7 @@ export default {
       input,
       paginatedArray
     }
-  
-    }
   }
+}
   
 </script>
